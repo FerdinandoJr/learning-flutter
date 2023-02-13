@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Page2 extends StatefulWidget {
-  const Page2({super.key});
+class Page3 extends StatefulWidget {
+  const Page3({super.key});
 
   @override
-  State<Page2> createState() => _Page2State();
+  State<Page3> createState() => _Page2State();
 }
 
-class _Page2State extends State<Page2> {
+class _Page2State extends State<Page3> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -17,16 +17,16 @@ class _Page2State extends State<Page2> {
       body: Center(
         child: Container(
           height: 80.0,
-          color: Colors.blueAccent,
+          color: Theme.of(context).primaryColor,
           child: Column(
             children: [
               IconButton(
-                  onPressed: () => Navigator.popAndPushNamed(context, '/third'),
+                  onPressed: () => Navigator.pop(context),
                   icon: const Icon(Icons.home),
                   padding:  const EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
               ),
               const Text(
-                  'Ir para pagina 3'
+                  'Voltar ao Menu'
               ),
             ],
           ),
