@@ -1,46 +1,47 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/src/components/list_menu.dart';
+import 'package:learning_flutter/src/navigator/defined_router.dart';
 
 List<Map<String, dynamic>> items = [
   {
     'label': 'Separação',
     'icon': Icons.add_shopping_cart,
-    'router': '/first'
+    'router': DefinedRouter.page1
   },
   {
     'label': "Trocar endereço",
     'icon': Icons.change_circle,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Reposição",
     'icon': Icons.move_down,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Inventário",
     'icon': Icons.content_paste,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Inventário Rotativo",
     'icon': Icons.rotate_left,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Cad. de Produtos",
     'icon': Icons.add_box,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Células WMS",
     'icon': Icons.move_to_inbox,
-    'router': '/second'
+    'router': DefinedRouter.page2
   },
   {
     'label': "Produtividade",
     'icon': Icons.watch_later_outlined,
-    'router': '/second'
+    'router': DefinedRouter.page2
   }
 ];
 
@@ -65,6 +66,7 @@ class HomeMenus extends StatelessWidget {
         for (var item in items) Container(
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color: Colors.white,
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey,

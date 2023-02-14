@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_flutter/src/navigator/defined_router.dart';
 
 class Page2 extends StatefulWidget {
   const Page2({super.key});
@@ -21,7 +22,7 @@ class _Page2State extends State<Page2> {
           child: Column(
             children: [
               IconButton(
-                  onPressed: () => Navigator.popAndPushNamed(context, '/third'),
+                  onPressed: () => const Navigator2().popAndPush(context, DefinedRouter.page3),
                   icon: const Icon(Icons.home),
                   padding:  const EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
               ),

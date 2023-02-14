@@ -34,7 +34,10 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       key: _scaffoldKey,
-      appBar: CustomAppBar(callback: _openDrawer, title: 'Data Company'),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(40),
+        child: AppBar(),
+      ),
       body: const Scrollbar (
         child: Center(
             child: HomeMenus(),
@@ -43,8 +46,13 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: Center(
           child: Column(
-            verticalDirection: VerticalDirection.up,
             children: [
+              IconButton(
+                  onPressed: _closeDrawer,
+                  icon: const Icon(
+                      Icons.close
+                  )
+              ),
               Text(
                   '$count'
               ),
@@ -52,12 +60,6 @@ class _HomePageState extends State<HomePage> {
                   onPressed: increment,
                   icon: const Icon(
                       Icons.plus_one
-                  )
-              ),
-              IconButton(
-                  onPressed: _closeDrawer,
-                  icon: const Icon(
-                      Icons.close
                   )
               ),
             ],

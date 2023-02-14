@@ -7,22 +7,25 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      automaticallyImplyLeading: false,
-      actions: <Widget> [
-        IconButton(
-          icon: const Icon(Icons.account_box_rounded, color: Colors.white,),
-          tooltip: '',
-          onPressed: callback
-        )
-      ],
-      title: Text(
-        title,
-        style: const TextStyle(
-            color: Colors.white
+    return PreferredSize(
+      preferredSize: const Size.fromHeight(40),
+      child: AppBar(
+        automaticallyImplyLeading: false,
+        actions: <Widget> [
+          IconButton(
+            icon: const Icon(Icons.account_box_rounded, color: Colors.white,),
+            tooltip: '',
+            onPressed: callback
+          )
+        ],
+        title: Text(
+          title,
+          style: const TextStyle(
+              color: Colors.white
+          ),
         ),
+        toolbarHeight: 50.0,
       ),
-      toolbarHeight: 50.0,
     );
   }
 

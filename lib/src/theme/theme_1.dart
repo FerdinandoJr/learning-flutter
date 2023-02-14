@@ -21,14 +21,22 @@ MaterialColor buildMaterialColor(Color color) {
 }
 
 final theme = ThemeData(
-  appBarTheme: const AppBarTheme(color: Color.fromARGB(250, 248, 113, 40)),
-  primarySwatch: buildMaterialColor(const Color.fromARGB(250, 248, 113, 40)),
-  textTheme: const TextTheme(bodyMedium: TextStyle(fontSize: 16)),
+  appBarTheme: const AppBarTheme(
+    color: Color.fromARGB(250, 248, 113, 40),
+  ),
+  primarySwatch: buildMaterialColor(
+    const Color.fromARGB(250, 248, 113, 40),
+  ),
+  textTheme: const TextTheme(
+    bodyMedium: TextStyle(
+        fontSize: 13,
+        fontWeight: FontWeight.bold,
+    ),
+  ),
   elevatedButtonTheme: const ElevatedButtonThemeData(
     style: ButtonStyle(
-      backgroundColor:
-          MaterialStatePropertyAll(Color.fromARGB(250, 248, 113, 40)),
-      textStyle: MaterialStatePropertyAll(TextStyle(color: Colors.white))
-    ),
+        backgroundColor:
+            MaterialStatePropertyAll(Color.fromARGB(250, 248, 113, 40)),
+        textStyle: MaterialStatePropertyAll(TextStyle(color: Colors.white))),
   ),
 );
