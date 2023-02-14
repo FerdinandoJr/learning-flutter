@@ -4,6 +4,7 @@ import 'package:learning_flutter/src/pages/home/home-page.dart';
 import 'package:learning_flutter/src/pages/page-01/page1.dart';
 import 'package:learning_flutter/src/pages/page-02/page2.dart';
 import 'package:learning_flutter/src/pages/page-03/page3.dart';
+import 'package:learning_flutter/src/pages/register.dart';
 
 class DefinedRouter {
   static Widget devicesSelector = DevicesSelector();
@@ -11,6 +12,7 @@ class DefinedRouter {
   static Widget page1 = const Page1();
   static Widget page2 = const Page2();
   static Widget page3 = const Page3();
+  static Widget register = const Cadastro();
 }
 
 class Navigator2 extends Navigator{

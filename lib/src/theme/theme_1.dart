@@ -31,7 +31,12 @@ final theme = ThemeData(
     bodyMedium: TextStyle(
         fontSize: 13,
         fontWeight: FontWeight.bold,
+        color: Colors.white
     ),
+    headlineSmall: TextStyle(
+      color: Color.fromARGB(250, 248, 113, 40),
+      fontWeight: FontWeight.bold
+    )
   ),
   elevatedButtonTheme: const ElevatedButtonThemeData(
     style: ButtonStyle(

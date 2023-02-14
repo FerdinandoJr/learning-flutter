@@ -42,6 +42,11 @@ List<Map<String, dynamic>> items = [
     'label': "Produtividade",
     'icon': Icons.watch_later_outlined,
     'router': DefinedRouter.page2
+  },
+  {
+    'label': "Cadastro",
+    'icon': Icons.app_registration,
+    'router': DefinedRouter.register
   }
 ];
 
