@@ -21,10 +21,11 @@ class _DevicesSelectorState extends State<DevicesSelector> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 100,
-                // child: Image.network('https://downloader.datacompanysistemas.com/image/coletor-teste/data_company_1.jpg'),
-                child: Icon(Icons.network_locked_outlined, size: 100),
+              SizedBox(
+                child: Image.asset(
+                  'assets/gifs/intro.gif'
+                ),
+                // child: Icon(Icons.network_locked_outlined, size: 100),
               ),
               const Padding(
                 padding: EdgeInsets.all(10.0),
